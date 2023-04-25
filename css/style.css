@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  grid-column: 1/ 2;
+}
+
+.header {
+  grid-column: 2/ 3;
+}
+
+.cards {
+  grid-column: 2/ 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  border: 1px solid black;
+  width: 200px;
+}
+
+span, label {
+  display: block;
+}
+

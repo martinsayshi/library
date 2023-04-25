@@ -9,6 +9,33 @@
   <title>Library</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="header">
+      header for now
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h2 class="title">title</h2>
+        <span class="author">author</span>
+        <span class="pages">345</span>
+        <span class="read">true</span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <form action="#" id="form">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Harry Potter and the Philosopher's Stone">
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" placeholder="J.K. Rowling">
+        <label for="pages">Number of pages</label>
+        <input type="text" id="pages" name="page" placeholder="466">
+        <label for="read">
+          <input type="checkbox" id="read" name="read" value="read">
+          Have you read it?
+        </label>
+        <button id="submit" type="submit">Add New Book</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
