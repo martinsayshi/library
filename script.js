@@ -11,30 +11,35 @@ let myLibrary = [
     author: "J.R.R. Tolkien",
     pages: 305,
     read: true,
+    id: 1,
   },
   {
     title: "A Game of Thrones",
     author: "George R.R. Martin",
     pages: 893,
     read: false,
+    id: 2,
   },
   {
     title: "The Name of the Wind",
     author: "Patrick Rothfuss",
     pages: 722,
     read: true,
+    id: 3,
   },
   {
     title: "American Gods",
     author: "Neil Gaiman",
     pages: 635,
     read: false,
+    id: 4,
   },
   {
     title: "The Princess Bride",
     author: "William Goldman",
     pages: 456,
     read: false,
+    id: 5,
   },
 ];
 
@@ -108,6 +113,7 @@ function displayBooks() {
 
 const removeBook = (id) => {
   myLibrary = myLibrary.filter((book) => book.id !== id);
+
   updateStats();
 };
 
