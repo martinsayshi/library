@@ -4,25 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
   <script src="script.js" defer></script>
   <title>Library</title>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      header for now
-    </div>
-    <div class="cards">
-      <div class="card">
-        <h2 class="title">title</h2>
-        <span class="author">author</span>
-        <span class="pages">345</span>
-        <span class="read">true</span>
+  <div class="grid-container">
+    <header class="header">
+      <h1>Add you favourite books!</h1>
+    </header>
+    <main class="main">
+      <div class="main-overview">
+        <div class="overview-card">
+          <span class="overview-card-text">Finished</span>
+          <span class="overview-card-text" id="finished">5</span>
+        </div>
+        <div class="overview-card">
+          <span class="overview-card-text">To Read</span>
+          <span class="overview-card-text" id="left">10</span>
+        </div>
+        <div class="overview-card">
+          <span class="overview-card-text">Total</span>
+          <span class="overview-card-text" id="total">15</span>
+        </div>
       </div>
-    </div>
-    <div class="sidebar">
-      <form action="#" id="form">
+      <div class="main-cards">
+      </div>
+    </main>
+    <aside class="sidebar">
+      <form action="#" id="form" class="form">
         <label for="title">Title</label>
         <input type="text" id="title" name="title" placeholder="Harry Potter and the Philosopher's Stone">
         <label for="author">Author</label>
@@ -33,9 +44,12 @@
           <input type="checkbox" id="read" name="read" value="read">
           Have you read it?
         </label>
-        <button id="submit" type="submit">Add New Book</button>
+        <button id="submit" type="submit" class="btn">Add New Book</button>
       </form>
-    </div>
+    </aside>
+    <footer class="footer">
+      <p>Copyright &copy; <span id="year"></span> martinsayshi</p> <a href="https://github.com/martinsayshi" target="_blank"><img src="img/github-mark-white.svg" alt="github link" class="footer-img"/></a>
+  </footer>
   </div>
 </body>
 </html>
